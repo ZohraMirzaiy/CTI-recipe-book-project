@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add New Recipe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="add-recipe.html">Add Recipe</a></li>
+        <li><a href="recipe-list.html">Recipe List</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Add a New Recipe</h1>
+    <form action="#" method="post">
+      <label for="recipe-name">Recipe Name:</label><br>
+      <input type="text" id="recipe-name" name="recipe-name" required><br><br>
+
+      <label for="ingredients">Ingredients:</label><br>
+      <textarea id="ingredients" name="ingredients" rows="5" required></textarea><br><br>
+
+      <label for="instructions">Cooking Instructions:</label><br>
+      <textarea id="instructions" name="instructions" rows="5" required></textarea><br><br>
+
+      <label for="image-url">Image URL:</label><br>
+      <input type="url" id="image-url" name="image-url" required><br><br>
+
+      <label for="category">Recipe Category:</label><br>
+      <select id="category" name="category" required>
+        <option value="">--Select Category--</option>
+        <option value="Desserts">Desserts</option>
+        <option value="Appetizers">Appetizers</option>
+        <option value="Vegan">Vegan</option>
+        <option value="Quick Meals">Quick Meals</option>
+      </select><br><br>
+
+      <button type="submit">Add Recipe</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Afghani Recipe Book</p>
+  </footer>
+
+</body>
+</html>
+
